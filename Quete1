@@ -6,18 +6,24 @@
         xmlns:local="clr-namespace:Quete1"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="800">
-    <Grid>
+   <Grid>
         <Grid HorizontalAlignment="Center" Height="60" Margin="10,10,10,10" VerticalAlignment="Top" Width="800">
             <StackPanel HorizontalAlignment="Left" Height="auto" Margin="10,5,0,5" Width="auto"  Orientation="Horizontal">
                 <ComboBox x:Name="File" Margin="10,10,10,10" Height="30" Width="200" FontSize="20" FontFamily="Arial" FontWeight="Bold">
-                    <ComboBoxItem Content="Bouton - Open"/>
-                    <ComboBoxItem Content="Bouton - Save"/>
-                    <ComboBoxItem Content="Séparateur"/>
-                    <ComboBoxItem Content="Bouton - Quitter"/>
+                    <Button>
+                        <ComboBoxItem Content="Open"/>
+                    </Button>
+                    <Button>
+                        <ComboBoxItem Content="Save"/>
+                    </Button>                    
+                    <Separator/>
+                    <Button>
+                        <ComboBoxItem Content="Quitter"/>
+                    </Button>
                 </ComboBox>
                 <ComboBox x:Name="About" Margin="10,10,10,10" Height="30" Width="200" FontSize="20" FontFamily="Arial" FontWeight="Bold" >
                     <ComboBoxItem Content="About my boss"/>
-                    <ComboBoxItem Content="Séparateur"/>
+                    <Separator/>
                     <ComboBoxItem Content="Help"/>
                 </ComboBox>
             </StackPanel>
